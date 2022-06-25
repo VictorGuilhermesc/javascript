@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome" id="txtnome" placeholder="Digite seu nome">
+    <input type="number" name="salario" id="txtsalario">
+    <input type="button" value="executar" onclick="executar()">
+    <script>
+        function executar(){
+            var nome = document.querySelector('input#txtnome').value
+            var salario = document.querySelector('input#txtsalario').value
+            window.document.write(`Seu nome é ${nome} e seu salario é de ${salario}`)
+        }
+    </script>
+</body>
+</html>
